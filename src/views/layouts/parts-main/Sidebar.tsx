@@ -32,7 +32,7 @@ const getMenuItems = (userRoles: string[]) => [
     roles: ["warehouse", "owner", "outlet","cashier"],
     children: [
       { label: "Kasir", icon: <TbShoppingCart />, path: "/outlets", roles: ["cashier"] },
-      { label: "Riwayat Penjualan", icon: <FiTag />, path: "/riwayat-penjualan", roles: ["warehouse", "owner", "outlet"] },
+      { label: "Riwayat Penjualan", icon: <FiTag />, path: "/riwayat-penjualan", roles: ["warehouse", "owner", "outlet","cashier"] },
     ],
   },
   {
@@ -40,7 +40,7 @@ const getMenuItems = (userRoles: string[]) => [
     label: "Request Pembelian",
     icon: <FiTag />,
     path: "/request-pembelian",
-    roles: ["warehouse", "cashier"],
+    roles: ["warehouse"],
   },
   {
     label: "Produk",
